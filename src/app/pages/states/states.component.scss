@@ -1,0 +1,106 @@
+/* General Reset */
+:host{
+    display: block;
+    background-image: url('https://media.istockphoto.com/id/942152278/photo/gadisar-lake-at-jaisalmer-rajasthan-at-sunrise-with-ancient-temples-and-archaeological-ruins.jpg?s=612x612&w=0&k=20&c=HvhbHZ8HH_lAjAAI2pmqL4mUipyyAwy31qp5jjKQTO0=');
+    background-size: cover;
+    opacity: 70%;
+}
+
+/* Container */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Row and Column */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.col {
+    flex: 1 1 calc(25% - 20px); /* Adjusts column width */
+    max-width: calc(25% - 20px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.col:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* App Card Styling */
+app-card {
+    display: block;
+    padding: 15px;
+    text-align: center;
+    color: #444;
+}
+
+app-card img {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #eee;
+}
+
+app-card h2 {
+    font-size: 1.5rem;
+    color: #ff5722;
+    margin: 10px 0;
+}
+
+app-card p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #555;
+    padding: 0 10px;
+    margin-bottom: 15px;
+}
+
+/* Navbar */
+app-navbar {
+    position: sticky;
+    top: 0;
+    background: #ff5722;
+    padding: 10px;
+    color: white;
+    z-index: 1000;
+    text-align: center;
+}
+
+app-navbar a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 1.2rem;
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+    .col {
+        flex: 1 1 calc(33.33% - 20px);
+        max-width: calc(33.33% - 20px);
+    }
+}
+
+@media (max-width: 768px) {
+    .col {
+        flex: 1 1 calc(50% - 20px);
+        max-width: calc(50% - 20px);
+    }
+}
+
+@media (max-width: 576px) {
+    .col {
+        flex: 1 1 100%;
+        max-width: 100%;
+    }
+}
+

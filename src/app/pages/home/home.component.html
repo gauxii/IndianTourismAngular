@@ -1,0 +1,20 @@
+<h1>Welcome to Indian Tourism</h1>
+<owl-carousel-o [options]="customOptions">
+
+    <ng-container *ngFor="let slide of cimages">
+      <ng-template carouselSlide [id]="slide.id.toString()">
+        <img [src]="slide.src" [alt]="slide.alt">
+      </ng-template>
+    </ng-container>
+
+  </owl-carousel-o>
+
+<p>India, often referred to as the "Land of Diversity," is a destination that captivates the heart and soul of every traveler. It boasts an unparalleled richness in culture, history, and natural beauty.
+
+    Cultural Heritage: India is home to iconic landmarks like the Taj Mahal, Jaipur’s majestic forts, Varanasi’s ghats, and the architectural marvels of Khajuraho. Each state tells its own unique story through traditions, art, and festivals.
+    Spiritual Essence: With ancient temples, mosques, churches, and monasteries, India is a hub of spirituality, drawing seekers from around the world to places like Rishikesh, Bodh Gaya, and Amritsar.
+    Natural Wonders: Whether it’s the snowy peaks of the Himalayas, the sandy deserts of Rajasthan, or the lush greenery of the Western Ghats, India’s landscapes are as diverse as its people.
+    Cuisines to Savor: Indian cuisine is a gastronomic journey of flavors, with regional dishes like biryani, dosa, butter chicken, and sweets like gulab jamun and rasgulla leaving lasting impressions.
+    Adventure and Wildlife: From trekking and rafting in the mountains to spotting Bengal tigers in the Sundarbans or elephants in Kerala, India offers thrilling adventures and abundant wildlife.
+    Whether you're an explorer, a history enthusiast, a foodie, or a nature lover, Indian Tourism promises unforgettable experiences. Discover the vibrant colors, sounds, and sights of India—truly a country like no other!</p>
+    
